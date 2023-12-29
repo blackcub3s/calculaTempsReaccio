@@ -7,7 +7,7 @@
     <style>
 
         body {
-            font-size: 6em;
+            font-size: 5em;
         }
 
         #contenidorTaula {
@@ -49,6 +49,22 @@
         p:first-child {
             margin-top: 1em;
         }
+
+        /*MEDIA QUERY PER A MOBIL*/
+        @media screen and (max-width: 600px) {
+     
+            body {
+                font-size: 2em;
+            }
+            td {
+                padding: .05em;
+                border: 1px solid orange;
+            }  
+            table {border: 1px solid green;}
+            
+        }
+
+
     </style>
     
 </head>
@@ -58,7 +74,7 @@
     <h1>Calculadora de temps de reacció</h1>
 
 
-
+    
     <div id = "contenidorTaula">
         <table>
             <tr>
