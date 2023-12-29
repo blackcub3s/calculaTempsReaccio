@@ -6,16 +6,15 @@ var indexAleatori = -1;
 
 var clics = 0;
 var sumaTemps = 0;
+
 //TIPUS: EVENT LISTENER
-//PRE: quan clico una td -cel·la de la taula- entra per paràmetre l'índex de la mateixa.
-//POST: em genera un nou nombre aleatori, que referencia la td clicada -l'única visible-, l'amaga l'actual,
-//      va a obtenir un altre nombre aleatori i mostra el td que és referenciat per aquest.
-function casellaClicada(indexCasella) {
+//PRE: quan clico una td -cel·la de la taula- entra per variable global l'index de la mateixa (indexAleatori, generat en el main)
+//POST: em genera un nou nombre aleatori, que referencia la td clicada -l'única visible per ara-, l'amaga,
+//      va a obtenir un altre nombre aleatori i mostra el td que és referenciat per aquest altre nombre aleatori.
+function casellaClicada() {
     
     if (clics != 0) {
         
-
-    
         //calculo diferencia temporal entre clic previ (o càrrega de programa) i clic actual.
         var t_previ = t;
         t = performance.now();
@@ -33,13 +32,13 @@ function casellaClicada(indexCasella) {
         document.getElementById("mitjana").innerHTML = "[ <i>&mu;: " + Math.round(mitjana) + " ms </i>]";
 
         clics += 1;
-    } else {
+    } else { //cas en que fem el primer clic, que és quan realment començem a contar (no des de la càrrega de la pàgina com ho tenia al principi)
         t = performance.now();
         clics += 1;
     }
 
     //amago casella antiga i mostro la nova (escollida aleatòriament)
-    elements[indexCasella].style.visibility = "hidden"; //podia posar indexAleatori en comptes de indexCasella de fet, perquè indexAleatori està com a variable global
+    elements[indexAleatori].style.visibility = "hidden"; //podia posar indexCasella en comptes de indexAleatori de fet, i passar per parametre indexCasella en l'event listener de casellaClicada
     indexAleatori = Math.floor(Math.random() * elements.length);
     elements[indexAleatori].style.visibility = "visible";
 
