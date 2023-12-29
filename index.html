@@ -6,6 +6,7 @@
     <title>Document</title>
     <style>
 
+
         body {
             font-size: 5em;
         }
@@ -31,6 +32,7 @@
         h1 {
             text-align: center;
             font-size: .5em;
+            
         }
 
         #judici {
@@ -49,6 +51,28 @@
         p:first-child {
             margin-top: 1em;
         }
+
+
+        #contenidorBoto {
+            margin:0;
+            padding:0;
+            text-align: center;
+            background-color: white;/*MOSTRA EL PADDING RARO QUE AFEGEIX EL BOTO DEL DIMONI POSANT UN COLOR DIFERENT*/
+        }
+
+        #botoRefresca {
+            /*L'UNICA FORMA QUE NO ES MOSTRI EL PADDING ESTRANY QUE POSA A CONTENIDORBOTO EL BOTO POSEM positicio relativa i TOP: -ALGO
+            position: relative;
+            top: -1.6em;
+            */
+            padding: .5em;
+            border-radius: .5em;
+
+            background-color: black;
+            color: white;
+        }
+
+
 
         /*MEDIA QUERY PER A MOBIL*/
         @media screen and (max-width: 600px) {
@@ -102,6 +126,10 @@
 
     </div>
 
+    <div id = "contenidorBoto">
+        <button id="botoRefresca">Refresca</button>
+    </div>
+
     <div id = "judici">
         <p id = "difClicsConsecutius"></p>
         <p id = "mitjana"></p>
@@ -109,6 +137,13 @@
     
 
 
+
     <script src="scriptTaula.js"></script>
+    <script>
+        /*XAT GPT HA FET AQUESTA LÍNIA DE CODI PER REFRESCAR LA PAGINA QUAN CLICO AL BOTO*/
+        document.getElementById('botoRefresca').addEventListener('click', function() {
+            location.reload();
+        });
+    </script>
 </body>
 </html>
