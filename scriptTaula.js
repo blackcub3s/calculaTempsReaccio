@@ -46,7 +46,7 @@ function casellaClicada() {
 
         //poso el temps de reacció en relació a l'anterior clic amb respecte a clic actual i poso la mitjana aritmètica actual i el minim
         document.getElementById("difClicsConsecutius").innerHTML = "t("+clics+"): " + Math.round((tReacc)*10)/10 + " ms";
-        document.getElementById("mitjana").innerHTML = "<i>[min = "+Math.round(trMinim)+" ms | &mu; = " + Math.round(mitjana) + " ms | max = "+Math.round(trMax)+" ms]</i>";
+        document.getElementById("estadistiques").innerHTML = "<i>[min = "+Math.round(trMinim)+" ms | &mu; = " + Math.round(mitjana) + " ms | max = "+Math.round(trMax)+" ms]</i>";
 
         clics += 1;
     } else { //cas en que fem el primer clic, que és quan realment començem a contar el temps de reacció a l'usuari (no des de la càrrega de la pàgina)
