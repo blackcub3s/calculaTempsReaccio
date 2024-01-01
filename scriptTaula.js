@@ -3,6 +3,7 @@
 var elements = document.getElementsByTagName("td");
 let nreCaselles = elements.length;
 var indexAleatori = -1;
+var ultimNombreAleatoriGenerat = -1;
 var trMinim = Number.MAX_SAFE_INTEGER;
 var trMax = 0;
 var clics = 0;
@@ -54,12 +55,24 @@ function casellaClicada() {
         clics += 1;
     }
 
-    //amago casella antiga i mostro la nova (escollida aleatòriament)
+    //amago casella antiga i mostro la nova (escollida aleatòriament, excloient L'ANTERIOR CASELLA MOSTRADA -ALEATORI SENSE REPOSICIO DE L'ULTIMA CASELLA-)
+    ultimNombreAleatoriGenerat = indexAleatori;
     elements[indexAleatori].style.visibility = "hidden"; //podia posar indexCasella en comptes de indexAleatori de fet, i passar per parametre indexCasella en l'event listener de casellaClicada
-    indexAleatori = Math.floor(Math.random() * elements.length);
+    indexAleatori = aleatoriSenseResposicio(ultimNombreAleatoriGenerat);
     elements[indexAleatori].style.visibility = "visible";
 }
 
+//PRE: nombre que no vols que surti com a nombre aleatori (dins de l'interval [0,elements.length])
+//POST: nombre aleatori entre [0,elements.length] diferent al nombre ultimNombre.
+//FINALITAT: Evitar que surtin dos blocs a clicar en el mateix lloc, confonent a l'usuari de manera que sembla que el clic sobre
+//la casella no s'ha efectuat.
+function aleatoriSenseResposicio(ultimNombreAleatoriGenerat) {
+    do {
+        indexAleatori = Math.floor(Math.random() * elements.length);
+    } while (indexAleatori == ultimNombreAleatoriGenerat);
+    return indexAleatori;
+    
+}
 
 function main() {
     //VALOR ALEATORI ENTRE INTERVAL TANCAT [0, elements.length - 1]
