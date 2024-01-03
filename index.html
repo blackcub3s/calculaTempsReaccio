@@ -6,6 +6,7 @@
     <title>Document</title>
     <style>
 
+        
 
         body {
             font-size: 5em;
@@ -60,14 +61,13 @@
             background-color: white;/*MOSTRA EL PADDING RARO QUE AFEGEIX EL BOTO DEL DIMONI POSANT UN COLOR DIFERENT*/
         }
 
-        #botoRefresca {
+        .boto {
             /*L'UNICA FORMA QUE NO ES MOSTRI EL PADDING ESTRANY QUE POSA A CONTENIDORBOTO EL BOTO POSEM positicio relativa i TOP: -ALGO
             position: relative;
             top: -1.6em;
             */
             padding: .5em;
             border-radius: .5em;
-
             background-color: black;
             color: white;
         }
@@ -101,6 +101,8 @@
 
     </style>
     
+    <link rel="stylesheet" href="histogramaGPT.css">
+
 </head>
 <body>
 
@@ -137,7 +139,8 @@
     </div>
 
     <div id = "contenidorBoto">
-        <button id="botoRefresca">Refresca</button>
+        <button id="botoRefresca" class = "boto">Refresca</button>
+        <button id="botoHistograma" class = "boto" onclick="main_fesHistograma()">Histograma</button>
     </div>
 
     <div id = "judici">
@@ -145,7 +148,10 @@
         <p id = "estadistiques"></p>
     </div>
     
+    <hr>
 
+    <!--aqui posem l'histograma-->
+    <div id="histogram-container"></div>
 
 
     <script src="scriptTaula.js"></script>
@@ -154,6 +160,11 @@
         document.getElementById('botoRefresca').addEventListener('click', function() {
             location.reload();
         });
+
     </script>
+
+    <!--afegim l'script de l'hisgotrama assistit per xatGPT. Usarem variables de dins l'scriptTaula.js-->
+    <script src="scriptHistogramaGPT.js"></script>
+
 </body>
 </html>

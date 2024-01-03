@@ -8,6 +8,7 @@ var trMinim = Number.MAX_SAFE_INTEGER;
 var trMax = 0;
 var clics = 0;
 var sumaTemps = 0;
+var arrayTempsReaccio = [];
 
 //PRE: DOS valors numerics
 //POST: el valor més petit dels dos retornat
@@ -39,11 +40,13 @@ function casellaClicada() {
         t = performance.now();
         tReacc = t - t_previ;
         
-        //calculo la mitjana de temps de reaccio i el valor mínim i màxim a cada clicada
+        //A cada clicada calculo la mitjana de temps de reaccio, el valor mínim, màxim i guardo els valors en array
         trMinim = minim2(tReacc, trMinim);
         trMax = maxim2(tReacc, trMax);
         sumaTemps += tReacc;
         mitjana = sumaTemps / clics;
+        arrayTempsReaccio.push(Math.round((tReacc)*10)/10); //guardem un sol decimal del temps de reaccio
+        //console.log(arrayTempsReaccio);
 
         //poso el temps de reacció en relació a l'anterior clic amb respecte a clic actual i poso la mitjana aritmètica actual i el minim
         document.getElementById("difClicsConsecutius").innerHTML = "t("+clics+"): " + Math.round((tReacc)*10)/10 + " ms";

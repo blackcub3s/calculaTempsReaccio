@@ -1,0 +1,29 @@
+
+
+  #histogram-container {
+    display: flex;
+    justify-content: center;           
+  }
+
+  .bar-container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-right: .1em; /*AMPLADA HISTOGRAMA*/
+  }
+
+  .bar {
+    background-color: #3498db;
+  }
+
+  .bar-label {
+    margin-top: 1.5em;
+    font-size: .2em;
+  }
+
+
+  .etiqueta-Eix-X {
+      margin-top: 1em;
+      font-size: .2em;
+      transform: rotate(-45deg);
+  }
