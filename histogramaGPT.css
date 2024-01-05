@@ -2,7 +2,8 @@
 
   #histogram-container {
     display: flex;
-    justify-content: center;           
+    justify-content: center; 
+    visibility:hidden; /*el mostrarem amb javascript en clicar el boto de l'histograma*/          
   }
 
   .bar-container {
@@ -22,8 +23,11 @@
   }
 
 
-  .etiqueta-Eix-X {
-      margin-top: 1em;
-      font-size: .2em;
-      transform: rotate(-45deg);
-  }
+
+  /*ETIQUETES PER A LA X AMB ELS LI I LS DE L'INTERVAL*/
+  .etiqueta-Eix-X-ls, .etiqueta-Eix-X-li {font-size: .15em; font-style: italic;}
+  .etiqueta-Eix-X-li {margin-top: 1em; font-style: italic;}
+  .separador {font-size: .2em; transform: rotate(90deg);}
+
+  /*INFORMACIO ELEMENTS NO REPRESENTATS EN HISTOGRAMA*/
+  #remanentsHistograma {font-size: .2em; text-align: center; margin-top: 1em;}

@@ -6,12 +6,15 @@
     <title>Document</title>
     <style>
 
-        
+
 
         body {
             font-size: 5em;
         }
 
+        hr {
+            visibility:hidden; /*el mostrarem amb javascript, juntament amb l'histograma*/  
+        }
         #contenidorTaula {
             display: flex;
             align-items: center;
@@ -154,7 +157,14 @@
     <div id="histogram-container"></div>
 
 
+    <!--escrivim el nombre de valors no representats (l'histograma no representa valors per damunt ni per sota dels limits)-->
+    <div id="remanentsHistograma"></div>
+
+
+
+
     <script src="scriptTaula.js"></script>
+
     <script>
         /*XAT GPT HA FET AQUESTA LÍNIA DE CODI PER REFRESCAR LA PAGINA QUAN CLICO AL BOTO*/
         document.getElementById('botoRefresca').addEventListener('click', function() {
@@ -165,6 +175,8 @@
 
     <!--afegim l'script de l'hisgotrama assistit per xatGPT. Usarem variables de dins l'scriptTaula.js-->
     <script src="scriptHistogramaGPT.js"></script>
+
+
 
 </body>
 </html>

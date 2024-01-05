@@ -9,6 +9,7 @@ var trMax = 0;
 var clics = 0;
 var sumaTemps = 0;
 var arrayTempsReaccio = [];
+var arrayTempsNoRepresentatsEnHistorama = []; //s'usa en fitxer scriptHistograma
 
 //PRE: DOS valors numerics
 //POST: el valor més petit dels dos retornat
