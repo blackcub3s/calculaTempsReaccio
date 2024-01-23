@@ -30,4 +30,4 @@
   .separador {font-size: .2em; transform: rotate(90deg);}
 
   /*INFORMACIO ELEMENTS NO REPRESENTATS EN HISTOGRAMA*/
-  #remanentsHistograma {font-size: .2em; text-align: center; margin-top: 1em;}
+  #remanentsHistograma {font-size: .2em; text-align: center; margin-top: 1em; }
