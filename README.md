@@ -4,7 +4,7 @@ Aquesta eina permet calcular el temps de reacció motor d'una persona computant 
 
 El funcionament de l'aplicació és tal i com es mostra en el següent GIF:
 
-[gif_de_mostra](/imatges/gifDemo_appCalculaTempsReaccio.gif)
+![gif_de_mostra](/imatges/gifDemo_appCalculaTempsReaccio.gif)
 
 # Implementació
 
