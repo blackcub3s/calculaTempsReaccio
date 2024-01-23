@@ -2,6 +2,10 @@
 
 Aquesta eina permet calcular el temps de reacció motor d'una persona computant la diferència entre dos clics consecutius entre cel·les. No és una eina perfectament fiable ja que existeixen diferents fonts de variabilitat: la primera, la velocitat de l'ordinador de la persona que té el client (navegador). El propi llenguatge javascript i el temps que tarda en processar les dades i, finalment, la condició que s'ha emprat per evitar que surtin dues cel·les consecutives, com veurem. Tot i així, serveix com una bona aproximació per comparar individus sempre que facin servir el mateix dispositiu (sigui mòbil, tablet o ordinador).
 
+El funcionament de l'aplicació és tal i com es mostra en el següent GIF:
+
+[gif_de_mostra](/imatges/gifDemo_appCalculaTempsReaccio.gif)
+
 # Implementació
 
 ## Fitxer scriptTaula.js
