@@ -16,7 +16,9 @@
 
 # 1. Finalitat
 
-Aquesta eina permet calcular el temps de reacció motor d'una persona computant la diferència entre dos clics consecutius entre cel·les. No és una eina perfectament fiable ja que existeixen diferents fonts de variabilitat: la primera, la velocitat de l'ordinador de la persona que té el client (navegador). El propi llenguatge javascript i el temps que tarda en processar les dades i, finalment, la condició que s'ha emprat per evitar que surtin dues cel·les consecutives, com veurem. Tot i així, serveix com una bona aproximació per comparar individus sempre que facin servir el mateix dispositiu (sigui mòbil, tablet o ordinador).
+Aquesta eina permet fer una aproximació del temps de reacció motor d'una persona computant la diferència entre múltiples clics consecutius entre les cel·les d'una taula que van apareixent i desapareixent de forma aleatòria. 
+
+No és una eina perfectament fiable per donar una lectura acurada ja que existeixen diferents fonts de variabilitat en la mesura, com per exemple la velocitat de l'ordinador de la persona que té el client (navegador), el propi llenguatge javascript i el temps que tarda en processar les dades o la lògica de programació emprada per evitar que surtin dues cel·les consecutives, com veurem. Tot i així, serveix com una bona aproximació per comparar individus sempre que facin servir el mateix dispositiu (sigui mòbil, tablet o ordinador).
 
 El funcionament de l'aplicació és tal i com es mostra en el següent GIF:
 
