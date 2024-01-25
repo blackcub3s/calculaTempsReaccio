@@ -22,7 +22,9 @@ https://github.com/blackcub3s/calculaTempsReaccio/blob/7305301a55ef9c60cbf85a20c
 
 ## Funció casellaClicada()
 
-TO DO EXPLICACIÓ
+Aquesta funció és invocada cada cop que cliquem damunt d'una de les cel·les visibles de la taula. Si la casella que s'ha clicat s'ha clicat per primer cop des de que hem carregat la pàgina, s'inicia un temporitzador amb `t = performance.now()` (cas en que la variable global clics val zero). En cas contrari, si la cel·la ja ha sigut premuda en anteriors ocasions (és a dir, que clics és superior a 0, exemplificat per la condició `clics != 0`) aleshores ja tenim una referència temporal iniciada per l'usuari i podem calcular un temps de reacció emmagatzemant el valor de t en una variable auxiliar `t_previ` tot fent `t_previ = t` i aplicant de nou la sentència `t = performance.now` per poder fer la diferència `t - t_previ`. En calcular-lo també anem computant quin és el minim temps de reacció de l'usuari, el màxim, quina és la mitjana aritmètica i passar a l'HTML les estadístiques mencionades, perquè puguin ser vistes en temps real per l'usuari. A més aquesta funció també va guardant cada temps de reacció en l'`arrayTempsReaccio` per després mostrar l'histograma quan ho demani l'usuari.
+
+https://github.com/blackcub3s/calculaTempsReaccio/blob/7305301a55ef9c60cbf85a20c41402643589a6ce/scriptTaula.js#L32-L67
 
 ## Funció main
 
