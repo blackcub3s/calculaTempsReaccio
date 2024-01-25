@@ -64,7 +64,7 @@ https://github.com/blackcub3s/calculaTempsReaccio/blob/916a2f5414de74815f1795d6b
 
 ### 2.2.3 Funció afegeix_TR_a_arrayHistograma()
 
-https://github.com/blackcub3s/calculaTempsReaccio/blob/916a2f5414de74815f1795d6bae7db8cf205e3a8/scriptHistogramaGPT.js#L27
+https://github.com/blackcub3s/calculaTempsReaccio/blob/916a2f5414de74815f1795d6bae7db8cf205e3a8/scriptHistogramaGPT.js#L27-L51
 
 ### 2.2.3 Funció main_fesHistograma()
 
