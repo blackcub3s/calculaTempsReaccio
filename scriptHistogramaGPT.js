@@ -20,7 +20,7 @@ function generaIntervals(inicial, final, increment) {
 //FUNCIONAMENT: *  Si 1r valor arrIntervals fos 325, per a aquest valor, generarem interval [300,325), 
 //              on 300 sera el li (limit inferior) i 325 sera el ls (limit superior)). 
 //              *  Si el 2n valor arrIntervals fos 350, per a aquest valor, generarem
-//              l'interval [325, 350)
+//              l'interval [325, 350) 
 //              * I aixi fins a raribar al final de la llista. Si el final te valor k, aleshores tindriem [k-incrementHistograma,k]
 //              
 //
