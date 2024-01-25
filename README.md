@@ -64,11 +64,13 @@ https://github.com/blackcub3s/calculaTempsReaccio/blob/916a2f5414de74815f1795d6b
 
 ### 2.2.2 Funció afegeix_TR_a_arrayHistograma()
 
-Aquesta funció el que fa és prendre l'array d'intervals i l'array de temps de reacció. Recorre un per unt l'array de temps de reacció i cada element de la mateixa l'assigna a un dels intervals de l'histograma. Noteu que per a un element `el` de l'array `dades` que retorna `generaIntervals()` en aquesta funció es genera un interval per a l'histograma de tipus obert per l'esquerra i tancat per la dreta: `[el - increment, el)`:
+Aquesta funció el que fa és prendre l'array d'intervals i l'array de temps de reacció i retorna un array amb les dades necessaries per fer després l'histograma. Recorre un per un l'array de temps de reacció i a cada element de la mateixa l'assigna a un dels intervals de l'histograma. Noteu que per a un element `el` de l'array `dades` que retorna `generaIntervals()` en aquesta funció es genera un increment d'una unitat en una posició de l'array que després retorna. Aquesta última array, cada element, és el nombre d'ocurrències que hi ha per a un interval de l'histograma de tipus obert per l'esquerra i tancat per la dreta de la forma: `[el - increment, el)`:
 
 https://github.com/blackcub3s/calculaTempsReaccio/blob/916a2f5414de74815f1795d6bae7db8cf205e3a8/scriptHistogramaGPT.js#L27-L51
 
 ### 2.2.3 Funció main_fesHistograma()
+
+Aquesta funció mostra el contenidor de l'histograma i la líniea horitzontal que el separa de la taula a petició de l'usuari (quan aquest clica histograma). A més a més carrega les dades que necessiten les dues funcions previes, les invoca i finalment genera l'histograma amb la variable `data`. El codi que hi ha dins del for.Each és el codi adaptat i força modificat de [GPT_1.html](/FITXERS_AUXILIARS/GPT_1.html) que no només genera l'histograma sino que també posa les etiquetes d'intervals a sota i mostra un missatge d'error si l'usuari intenta generar un altre histograma sense refrescar la pàgina:
 
 https://github.com/blackcub3s/calculaTempsReaccio/blob/916a2f5414de74815f1795d6bae7db8cf205e3a8/scriptHistogramaGPT.js#L54-L124
 
