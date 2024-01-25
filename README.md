@@ -60,10 +60,15 @@ A partir d'aquest fitxer vaig anar fent modificacions fins acabar obtenint el fi
 
 ### 2.2.1 Funció generaIntervals()
 
+https://github.com/blackcub3s/calculaTempsReaccio/blob/916a2f5414de74815f1795d6bae7db8cf205e3a8/scriptHistogramaGPT.js#L4-L13
+
 ### 2.2.3 Funció afegeix_TR_a_arrayHistograma()
+
+https://github.com/blackcub3s/calculaTempsReaccio/blob/916a2f5414de74815f1795d6bae7db8cf205e3a8/scriptHistogramaGPT.js#L27
 
 ### 2.2.3 Funció main_fesHistograma()
 
+https://github.com/blackcub3s/calculaTempsReaccio/blob/916a2f5414de74815f1795d6bae7db8cf205e3a8/scriptHistogramaGPT.js#L54-L124
 
 
 
