@@ -70,7 +70,7 @@ https://github.com/blackcub3s/calculaTempsReaccio/blob/916a2f5414de74815f1795d6b
 
 ### 2.2.3 Funció main_fesHistograma()
 
-Aquesta funció mostra el contenidor de l'histograma i la líniea horitzontal que el separa de la taula a petició de l'usuari (quan aquest clica histograma). A més a més carrega les dades que necessiten les dues funcions previes, les invoca i finalment genera l'histograma amb la variable `data`. El codi que hi ha dins del for.Each és el codi adaptat i força modificat de [GPT_1.html](/FITXERS_AUXILIARS/GPT_1.html) que no només genera l'histograma sino que també posa les etiquetes d'intervals a sota i mostra un missatge d'error si l'usuari intenta generar un altre histograma sense refrescar la pàgina:
+Aquesta funció mostra el contenidor de l'histograma i la línia horitzontal que el separa de l'àrea de joc a petició de l'usuari (quan aquest clica histograma). A més a més, carrega les dades que necessiten les dues funcions previes, les invoca i finalment genera l'histograma amb la variable `data`. El codi que hi ha dins del `for.Each` és el codi adaptat i força modificat de [GPT_1.html](/FITXERS_AUXILIARS/GPT_1.html) que no només genera l'histograma sino que també posa les etiquetes d'intervals a sota i mostra un missatge d'error si l'usuari intenta generar un altre histograma sense refrescar la pàgina:
 
 https://github.com/blackcub3s/calculaTempsReaccio/blob/916a2f5414de74815f1795d6bae7db8cf205e3a8/scriptHistogramaGPT.js#L54-L124
 
