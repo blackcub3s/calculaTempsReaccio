@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f4f4f4;
+    }
+
+    #histogram-container {
+      width: 80%;
+      max-width: 600px;
+      border: 1px solid #ccc;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .bar {
+      display: inline-block;
+      width: 20px;
+      margin-right: 5px;
+      background-color: #3498db;
+    }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const data = [4, 7, 2, 5, 10];
+
+      const histogramContainer = document.getElementById("histogram-container");
+
+      data.forEach(value => {
+        const bar = document.createElement("div");
+        bar.className = "bar";
+        bar.style.height = value * 20 + "px"; // You can adjust the multiplier for height
+        histogramContainer.appendChild(bar);
+      });
+    });
+  </script>
+  <title>Simple Histogram</title>
+</head>
+<body>
+  <div id="histogram-container"></div>
+</body>
+</html>
