@@ -64,7 +64,7 @@ https://github.com/blackcub3s/calculaTempsReaccio/blob/916a2f5414de74815f1795d6b
 
 ### 2.2.2 Funció afegeix_TR_a_arrayHistograma()
 
-Aquesta funció el que fa és prendre l'array d'intervals i l'array de temps de reacció. Recorre un per unt l'array de temps de reacció i cada element de la mateixa l'assigna a un dels intervals de l'histograma. Noteu que per a un element `el` de l'array `dades` que retorna `generaIntervals()` en aquesta funció es genera un interval per a l'histograma de tipus obert per l'esquerra i tancat per la dreta: [`el - increment`, `el`):
+Aquesta funció el que fa és prendre l'array d'intervals i l'array de temps de reacció. Recorre un per unt l'array de temps de reacció i cada element de la mateixa l'assigna a un dels intervals de l'histograma. Noteu que per a un element `el` de l'array `dades` que retorna `generaIntervals()` en aquesta funció es genera un interval per a l'histograma de tipus obert per l'esquerra i tancat per la dreta: `[el - increment, el)`:
 
 https://github.com/blackcub3s/calculaTempsReaccio/blob/916a2f5414de74815f1795d6bae7db8cf205e3a8/scriptHistogramaGPT.js#L27-L51
 
