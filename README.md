@@ -53,7 +53,7 @@ Per simplificar la tasca vaig demanar a xatGPT la següent prompt: "_I want to g
 
 A partir d'aquest fitxer vaig anar fent modificacions fins acabar obtenint el fitxer [scriptHistogramaGPT.js](/scriptHistogramaGPT.js) que, sumat a l'arxiu CSS [histogramaGPT.css](/histogramaGPT.css), ens permet obtenir aquest histograma:
 
-![sortida fitxer meu](/FITXERS_AUXILIARS/Output_histograma_meu.PNG)
+![sortida fitxer meu](/FITXERS_AUXILIARS/Output_histograma_meu_v2.PNG)
 
  Dins [scriptHistogramaGPT.js](/scriptHistogramaGPT.js) tenim una variable global booleana inicialitzada a fals (`var histogramaGenerat = false`) i tres funcions, que desgranarem a continuació en els seguents tres sub apartats (2.2.1, 2.2.2 i 2.2.3):
 
