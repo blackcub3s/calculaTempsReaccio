@@ -62,7 +62,7 @@ A partir d'aquest fitxer vaig anar fent modificacions fins acabar obtenint el fi
 
 https://github.com/blackcub3s/calculaTempsReaccio/blob/916a2f5414de74815f1795d6bae7db8cf205e3a8/scriptHistogramaGPT.js#L4-L13
 
-### 2.2.3 Funció afegeix_TR_a_arrayHistograma()
+### 2.2.2 Funció afegeix_TR_a_arrayHistograma()
 
 https://github.com/blackcub3s/calculaTempsReaccio/blob/916a2f5414de74815f1795d6bae7db8cf205e3a8/scriptHistogramaGPT.js#L27-L51
 
