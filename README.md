@@ -1,7 +1,6 @@
 # Índex de continguts
 
 1. [Finalitat](#1-finalitat)
-    1. [Funcionament de l'Aplicació](#funcionament-de-laplicació)
 2. [Implementació](#2-implementació)
     1. [Fitxer scriptTaula.js](#21-fitxer-scripttaulajs)
         1. [Funció main()](#211-funció-main)
