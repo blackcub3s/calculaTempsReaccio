@@ -1,13 +1,21 @@
 # Taula de continguts
 
 1. [Finalitat](#1-finalitat)
+
 2. [Implementació](#2-implementació)
+
    2. 1. [Fitxer scriptTaula.js](#21-fitxer-scripttaulajs)
+
       2. 1. 1. [Funció main()](#211-funció-main)
+
       2. 1. 2. [Funció casellaClicada()](#212-funció-casellaclicada)
+
    2. 2. [Fitxer scriptHistogramaGPT.js](#22-fitxer-scripthistogramagptjs)
+
       2. 2. 1. [Funció generaIntervals()](#221-funció-generaintervals)
+
       2. 2. 2. [Funció afegeix_TR_a_arrayHistograma()](#222-funció-afegeix_tr_a_arrayhistograma)
+
       2. 2. 3. [Funció main_fesHistograma()](#223-funció-main_feshistograma)
 
 
