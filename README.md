@@ -2,13 +2,13 @@
 
 1. [Finalitat](#1-finalitat)
 2. [Implementació](#2-implementació)
-   1. [Fitxer scriptTaula.js](#21-fitxer-scripttaulajs)
-      1. [Funció main()](#211-funció-main)
-      2. [Funció casellaClicada()](#212-funció-casellaclicada)
-   2. [Fitxer scriptHistogramaGPT.js](#22-fitxer-scripthistogramagptjs)
-      1. [Funció generaIntervals()](#221-funció-generaintervals)
-      2. [Funció afegeix_TR_a_arrayHistograma()](#222-funció-afegeix_tr_a_arrayhistograma)
-      3. [Funció main_fesHistograma()](#223-funció-main_feshistograma)
+   2. 1. [Fitxer scriptTaula.js](#21-fitxer-scripttaulajs)
+      2. 1. 1. [Funció main()](#211-funció-main)
+      2. 1. 2. [Funció casellaClicada()](#212-funció-casellaclicada)
+   2. 2. [Fitxer scriptHistogramaGPT.js](#22-fitxer-scripthistogramagptjs)
+      2. 2. 1. [Funció generaIntervals()](#221-funció-generaintervals)
+      2. 2. 2. [Funció afegeix_TR_a_arrayHistograma()](#222-funció-afegeix_tr_a_arrayhistograma)
+      2. 2. 3. [Funció main_fesHistograma()](#223-funció-main_feshistograma)
 
 
 # 1. Finalitat
@@ -70,7 +70,7 @@ https://github.com/blackcub3s/calculaTempsReaccio/blob/916a2f5414de74815f1795d6b
 
 ### 2.2.3 Funció main_fesHistograma()
 
-Aquesta funció mostra el contenidor de l'histograma i la línia horitzontal que el separa de l'àrea de joc a petició de l'usuari (quan aquest clica histograma). A més a més, carrega les dades que necessiten les dues funcions previes, les invoca i finalment genera l'histograma amb la variable `data`. El codi que hi ha dins del `for.Each` és el codi adaptat i força modificat de [GPT_1.html](/FITXERS_AUXILIARS/GPT_1.html) que no només genera l'histograma sino que també posa les etiquetes d'intervals a sota i mostra un missatge d'error si l'usuari intenta generar un altre histograma sense refrescar la pàgina:
+Aquesta funció mostra el contenidor de l'histograma i la línia horitzontal que el separa de l'àrea de joc a petició de l'usuari (quan aquest clica histograma). A més a més, carrega les dades que necessiten les dues funcions previes, les invoca i finalment genera l'histograma amb la variable `data`. El codi que hi ha dins del `for.Each` és el codi adaptat i força modificat de [GPT_1.html](/FITXERS_AUXILIARS/GPT_1.html) que no només genera l'histograma sino que també posa les etiquetes d'intervals a sota i mostra un missatge d'error si l'usuari intenta generar un altre histograma sense refrescar la pàgina:  
 
 https://github.com/blackcub3s/calculaTempsReaccio/blob/916a2f5414de74815f1795d6bae7db8cf205e3a8/scriptHistogramaGPT.js#L54-L124
 
